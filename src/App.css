@@ -1,0 +1,15 @@
+.background-image-1 {
+  background-image: url(./images/home.png);
+  /* Full height */
+  background-size: cover;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.background-shadow {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4));
+  box-shadow: inset 0px 10px 130px 35px rgba(0,0,0,0.8);
+}
