@@ -1,0 +1,67 @@
+h1 {
+  color: white;
+}
+
+.position {
+  position: absolute;
+}
+
+.text-box {
+  background: rgba(0, 0, 0,.5);
+  border-radius: 15px;
+  height: 100%;
+  width: 70% !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.box-text {
+  font-family: 'OpenSans-Light';
+  color: white;
+  font-size: 15pt;
+  padding-bottom: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.title-background-1 {
+  width: fit-content;
+  display: inline-block !important;
+  padding: 20px;
+}
+
+.title-text-1 {
+  font-family: 'OpenSans-Italic';
+  color: black;
+  font-size: 20pt;
+  background-color: white;
+}
+
+.title-text-2 {
+  font-family: 'OpenSans-Italic';
+  color: white;
+  font-size: 20pt;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .box-text {
+    font-size: 12pt;
+    padding-bottom: 12px;
+  }
+
+  .title-text-1 {
+    font-size: 15pt;
+  }
+
+  .title-text-2 {
+    font-size: 15pt;
+    padding-bottom: 12px;
+  }
+
+  .text-box {
+    width: 90% !important;
+  }
+}

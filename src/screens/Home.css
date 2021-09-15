@@ -1,0 +1,43 @@
+h1 {
+  color: white;
+}
+
+.position {
+  position: absolute;
+  padding-left: 0 !important;
+}
+
+.image-container {
+  text-align: center;
+  padding-left: 0 !important;
+  height: 500px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .image-container {
+    text-align: center;
+    padding-left: 0 !important;
+    height: 400px;
+  }
+}
+
+.image {
+  margin-top: 10%;
+  opacity: 0.9;
+}
+
+.text-container {
+  text-align: center;
+  color: white;
+  font-family: 'OpenSans-Light';
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+
+.top-row {
+  font-size: 20pt;
+}
+
+.bottom-row {
+  font-size: 15pt;
+}

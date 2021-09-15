@@ -1,0 +1,33 @@
+.navigation-row {
+  color: white;
+  justify-content: center;
+  background-position: fixed;
+}
+
+.navigation-bar {
+  padding-top: 17px;
+  justify-content: center;
+}
+
+.navigation-text {
+  text-align: center;
+  font-family: "OpenSans-Light";
+  font-size: 15pt;
+  margin-inline: 5px;
+  transition: all 0.5s;
+}
+
+.navigation-text:hover  {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.navigation-text.not-clicked {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.navigation-text.not-clicked:hover  {
+  opacity: 0.6;
+  cursor: pointer;
+}

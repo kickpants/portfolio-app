@@ -1,15 +1,44 @@
-.background-image-1 {
-  background-image: url(./images/home.png);
-  /* Full height */
-  background-size: cover;
-  height: 100%;
-  max-width: 100%;
-  display: block;
-}
-
 .background-shadow {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4));
-  box-shadow: inset 0px 10px 130px 35px rgba(0,0,0,0.8);
+  box-shadow: inset 0px 10px 140px 45px rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 900ms ease-in;
+  animation-duration: 800ms;
+  animation-name: slidein;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+  animation-duration: 500ms;
+  animation-name: slideout;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideout {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1000px);
+  }
 }

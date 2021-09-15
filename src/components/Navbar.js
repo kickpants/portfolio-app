@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const [isClicked, setIsClicked] = useState("Home");
@@ -21,7 +20,7 @@ const Navbar = (props) => {
             setIsClicked("Home");
           }}
         >
-          <Link to='/'>Home</Link>
+          Home
         </Col>
         <Col
           xs
@@ -35,7 +34,7 @@ const Navbar = (props) => {
             setIsClicked("About");
           }}
         >
-          <Link to='/about'>About</Link>
+          About
         </Col>
         <Col
           xs
@@ -49,7 +48,7 @@ const Navbar = (props) => {
             setIsClicked("Projects");
           }}
         >
-          <Link to='/projects'>Projects</Link>
+          Projects
         </Col>
       </Row>
     </Container>

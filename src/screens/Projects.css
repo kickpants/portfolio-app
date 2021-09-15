@@ -1,0 +1,34 @@
+h1 {
+  color: white;
+}
+
+.position {
+  position: absolute;
+}
+
+.remark {
+  font-family: "OpenSans-Italic";
+  font-size: 18pt;
+  color: rgba(255,255,255,0.4);
+  padding-bottom: 10px;
+}
+
+.divider {
+  margin-top: 20px !important;
+  height: 1px;
+  background: white;
+  opacity: 0.6;
+  animation-name: spreadout;
+  animation-delay: 300ms;
+  animation-duration: 900ms;
+  justify-content: center;
+}
+
+@keyframes spreadout {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
