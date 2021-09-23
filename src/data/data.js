@@ -1,7 +1,9 @@
 import Project from "../models/project";
+import RCNN_PDF from "./RCNN_Deep_Learning_Object_Detector_TY_JH.pdf";
 import lockerImage from "../images/thumbnails/locker_thumb.png";
 import blindsImage from "../images/thumbnails/blinds_thumb.png";
 import catImage from "../images/thumbnails/cat_thumbnail.png";
+import pybotImage from "../images/thumbnails/pybot_thumbnail.png";
 
 const ProjectData = [
   new Project(
@@ -20,7 +22,8 @@ const ProjectData = [
     librarians to receive and implement feedback on the design. \
     The frontend of the web app was created with HTML/CSS/JavaScript, while the backend consisted of PHP, AJAX, and MySQL to interact with the database.",
     lockerImage,
-    "https://www.youtube.com/watch?v=KeJDtqZYt7c"
+    "https://www.youtube.com/watch?v=KeJDtqZYt7c",
+    "https://github.com/kickpants/LibraryLocker-WebApp"
   ),
   new Project(
     "2",
@@ -39,7 +42,8 @@ const ProjectData = [
     is warming up. Otherwise, there is a manual mode which allows the user either set the \
     blinds to open or closed.",
     blindsImage,
-    "https://www.youtube.com/watch?v=Cc9OCkZNTVs"
+    "https://www.youtube.com/watch?v=Cc9OCkZNTVs",
+    null
   ),
   new Project(
     "3",
@@ -53,7 +57,24 @@ const ProjectData = [
     if such an area exists, which mostly resembles a cat. Along with this label will be a confidence score which reflects \
     how much the labeled area resembles a cat.",
     catImage,
-    null
+    null,
+    RCNN_PDF
+  ),
+  new Project(
+    "4",
+    "Python Based Discord Bot",
+    "This is a small personal program written with python and the discord.py python api wrapper for discord. It recieves a command from \
+    a user via a chat message and will act accordingly. Currently, its' main feature is the !play command, which recieves \
+    a song title as an arguement. The bot will join the voice channel that the user who called is resides in, and play the song(s)",
+    "This is a small personal program written with python and the discord.py python api wrapper for discord. It recieves a command from \
+    a user via a chat message and will act accordingly. Currently, its' main feature is the !play command, which recieves \
+    a song title as an arguement. The song title is processed and used to search youtube's api. The returned url's audio is then \
+    downloaded and formatted to play over the voice channel. A queueing feature with skipping was also implemented by using an asynchronous queue, \
+    and keeping track of the queue's size from the play command. Once the queue is exhausted, the bot will wait a moment in case there are \
+    any more requests, and then automatically leave the channel. For more information, view this project on Github!",
+    pybotImage,
+    null,
+    "https://github.com/kickpants/python-bot"
   ),
 ];
 

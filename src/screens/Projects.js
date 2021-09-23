@@ -5,9 +5,9 @@ import ProjectCard from "../components/ProjectCard";
 import ProjectData from "../data/data";
 import ViewProject from "../components/ViewProject";
 import { AnimatePresence } from "framer-motion";
+import { IoLogoGithub } from "react-icons/io";
 
 const Projects = () => {
-  const [showList, setShowList] = useState(true);
   const [showProject, setShowProject] = useState(false);
   const [currentProject, setCurrentProject] = useState("");
 
@@ -21,6 +21,7 @@ const Projects = () => {
         description={item.description}
         image={item.thumbnail}
         link={item.link}
+        source={item.source}
         showProject={showProject}
         handleClose={close}
       />
@@ -32,31 +33,40 @@ const Projects = () => {
       <div className="divider" />
       {showProject && currentProject}
       <AnimatePresence
-          exitBeforeEnter={true}
-          initial={false}
-          onExitComplete={() => null}
+        exitBeforeEnter={true}
+        initial={false}
+        onExitComplete={() => null}
       >
         {showProject && currentProject}
       </AnimatePresence>
       <div className="remark">Some stuff I've worked on...</div>
       <Container style={{ textAlign: "center" }}>
-        {showList &&
-          ProjectData.map((item) => (
-            <div
-              onClick={() => {
-                showProject ? close() : open();
-                clickHandler(item);
-              }}
-            >
-              <ProjectCard
-                key={item.id}
-                title={item.title}
-                summary={item.summary}
-                image={item.thumbnail}
-              />
-            </div>
-          ))}
+        {ProjectData.map((item) => (
+          <div
+            onClick={() => {
+              showProject ? close() : open();
+              clickHandler(item);
+            }}
+          >
+            <ProjectCard
+              key={item.id}
+              title={item.title}
+              summary={item.summary}
+              image={item.thumbnail}
+            />
+          </div>
+        ))}
       </Container>
+      <div class="footer">
+        <a
+          href="https://github.com/kickpants/portfolio-app"
+          className="footer-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoLogoGithub /> Github Page for This Site
+        </a>
+      </div>
     </Container>
   );
 };

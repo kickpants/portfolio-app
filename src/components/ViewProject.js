@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Backdrop from "./Backdrop";
 import "./ViewProject.css";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { IoMdArrowBack, IoLogoYoutube } from "react-icons/io";
+import { IoMdArrowBack, IoLogoYoutube, IoLogoGithub } from "react-icons/io";
 
 const dropIn = {
   hidden: {
@@ -14,7 +14,7 @@ const dropIn = {
     x: "0",
     opacity: 1,
     transition: {
-      duration: '900ms',
+      duration: "900ms",
       type: "spring",
       damping: 32,
       stiffness: 300,
@@ -51,6 +51,13 @@ const ViewProject = (props) => {
             <div className="video-link">
               <a href={props.link} target="_blank" rel="noopener noreferrer">
                 <IoLogoYoutube /> Presentation Video
+              </a>
+            </div>
+          ) : null}
+          {props.source != null ? (
+            <div className="video-link">
+              <a href={props.source} target="_blank" rel="noopener noreferrer">
+                <IoLogoGithub /> Source Code
               </a>
             </div>
           ) : null}

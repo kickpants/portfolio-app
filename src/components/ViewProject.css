@@ -6,7 +6,7 @@
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  position: fixed;
 }
 
 .mymodal-background {
@@ -45,6 +45,9 @@
 
 .thumb-class {
   padding: 20px;
+  width: 480px;
+  height: 270px;
+  border-radius: 5px;
 }
 
 .body-text {
