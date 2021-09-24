@@ -13,7 +13,7 @@ const About = () => {
         </Row>
         <Row>
           <Col className="box-text">
-            As I got older, my curiousity evolved into game modding for fun and
+            As I got older, my curiosity evolved into game modding for fun and
             tinkering with electronics. Eventually, that path led to coding, and
             then to software engineering; which seemed to be the perfect
             culmination of my favorite hobbies.
@@ -33,7 +33,7 @@ const About = () => {
           <Col className="box-text">
             I graduated from FAU with a BS in Computer Science in August 2021, finishing 
             with a GPA of 3.7. Throughout my journey there, I became familiar with 
-            important concepts such as OOP and the principles of software engineering
+            important concepts such as OOP and the principles of software engineering.
           </Col>
         </Row>
         <Row>
