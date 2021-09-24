@@ -31,8 +31,8 @@ const ProjectData = [
     "A panel of plantation shutters is remotely/automatically adjusted \
     using an SG90 servo motor attached to a shutter axis. The angle of \
     the shutter blades is dependent on the light and heat levels inside \
-    and outside. For example. to prevent the inside of the house from \
-    heating upduring hot weather, the blinds will automatically shut.",
+    and outside. For example, to prevent the inside of the house from \
+    heating up during hot weather, the blinds will automatically shut.",
     "The angle of a section of plantation shutters is modulated based on \
     input from four total sensors: two light sensors, and two temperature sensors. \
     these four sensors, plus the SG90 servo and a keypad are connected to a central \
@@ -63,15 +63,15 @@ const ProjectData = [
   new Project(
     "4",
     "Python Based Discord Bot",
-    "This is a small personal program written with python and the discord.py python api wrapper for discord. It recieves a command from \
-    a user via a chat message and will act accordingly. Currently, its' main feature is the !play command, which recieves \
-    a song title as an arguement. The bot will join the voice channel that the user who called is resides in, and play the song(s)",
-    "This is a small personal program written with python and the discord.py python api wrapper for discord. It recieves a command from \
-    a user via a chat message and will act accordingly. Currently, its' main feature is the !play command, which recieves \
-    a song title as an arguement. The song title is processed and used to search youtube's api. The returned url's audio is then \
+    "This is a small personal program written with Python and the Discord.py python API wrapper for Discord. It receives a command from \
+    a user via a chat message and will act accordingly. Currently, its' main feature is the !play command, which receives \
+    a song title as an arguement. The bot will join the voice channel that the user who called resides in, and play the song(s)",
+    "This is a small personal program written with Python and the Discord.py Python api wrapper for Discord. It receives a command from \
+    a user via a chat message and will act accordingly. Currently, its' main feature is the !play command, which receives \
+    a song title as an arguement. The song title is processed and used to search youtube's API. The returned URL's audio is then \
     downloaded and formatted to play over the voice channel. A queueing feature with skipping was also implemented by using an asynchronous queue, \
     and keeping track of the queue's size from the play command. Once the queue is exhausted, the bot will wait a moment in case there are \
-    any more requests, and then automatically leave the channel. For more information, view this project on Github!",
+    any more requests, and then automatically leave the channel. For more information, view this project on GitHub!",
     pybotImage,
     null,
     "https://github.com/kickpants/python-bot"
