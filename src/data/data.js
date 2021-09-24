@@ -53,7 +53,7 @@ const ProjectData = [
     this neural network to find out.",
     "This program, created using MATLAB, was a proof of concept for possible future Computer Vision \
     related projects. An R-CNN is trained by being fed several normal and augmented ground truth photos for training, and then \
-    tested by having it pin the cat on unlabled photos. Using the trained R-CNN, the program will attempt to label the area, \
+    tested by having it pin the cat on unlabeled photos. Using the trained R-CNN, the program will attempt to label the area, \
     if such an area exists, which mostly resembles a cat. Along with this label will be a confidence score which reflects \
     how much the labeled area resembles a cat.",
     catImage,
