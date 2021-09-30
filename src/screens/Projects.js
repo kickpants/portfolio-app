@@ -29,44 +29,46 @@ const Projects = () => {
   };
 
   return (
-    <Container className="position">
-      <div className="divider" />
-      {showProject && currentProject}
-      <AnimatePresence
-        exitBeforeEnter={true}
-        initial={false}
-        onExitComplete={() => null}
-      >
+    <Container>
+      <Container className="position">
+        <div className="divider" />
         {showProject && currentProject}
-      </AnimatePresence>
-      <div className="remark">Some stuff I've worked on...</div>
-      <Container style={{ textAlign: "center" }}>
-        {ProjectData.map((item) => (
-          <div
-            onClick={() => {
-              showProject ? close() : open();
-              clickHandler(item);
-            }}
-          >
-            <ProjectCard
-              key={item.id}
-              title={item.title}
-              summary={item.summary}
-              image={item.thumbnail}
-            />
-          </div>
-        ))}
-      </Container>
-      <div class="footer">
-        <a
-          href="https://github.com/kickpants/portfolio-app"
-          className="footer-link"
-          target="_blank"
-          rel="noopener noreferrer"
+        <AnimatePresence
+          exitBeforeEnter={true}
+          initial={false}
+          onExitComplete={() => null}
         >
-          <IoLogoGithub /> Github Page for This Site
-        </a>
-      </div>
+          {showProject && currentProject}
+        </AnimatePresence>
+        <div className="remark">Some stuff I've worked on...</div>
+        <Container style={{ textAlign: "center" }}>
+          {ProjectData.map((item) => (
+            <div
+              onClick={() => {
+                showProject ? close() : open();
+                clickHandler(item);
+              }}
+            >
+              <ProjectCard
+                key={item.id}
+                title={item.title}
+                summary={item.summary}
+                image={item.thumbnail}
+              />
+            </div>
+          ))}
+        </Container>
+        <div class="footer">
+          <a
+            href="https://github.com/kickpants/portfolio-app"
+            className="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoGithub /> Github Page for This Site
+          </a>
+        </div>
+      </Container>
     </Container>
   );
 };

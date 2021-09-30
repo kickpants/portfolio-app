@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Backdrop from "./Backdrop";
 import "./ViewProject.css";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import { IoMdArrowBack, IoLogoYoutube, IoLogoGithub } from "react-icons/io";
 
 const dropIn = {
