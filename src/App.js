@@ -15,7 +15,7 @@ import myStyles from "./styles/myStyles";
 function App() {
   const [isClicked, setIsClicked] = useState("Home");
   const [background, setBackground] = useState("url(" + homeImage + ")");
-  const [fade, setFade] = useState(false);
+  const [fade, setFade] = useState(true);
   const [shadow, setShadow] = useState(true);
   const [items, setItems] = useState({
     id: "Home",
