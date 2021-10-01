@@ -29,7 +29,21 @@ function App() {
     setFade(true);
   };
 
+  let imageLoad = true;
+
   useEffect(() => {
+    //quick way to make images pre-load so there is no black screen
+    //when switching components
+    if (imageLoad) {
+      const imagesPreload = [homeImage, aboutImage, skillsImage];
+      imagesPreload.forEach((image) => {
+        const newImage = new Image();
+        newImage.src = image;
+        window[image] = newImage;
+    });
+      imageLoad = false;
+    }
+    
     if (fade) {
       setTimeout(() => {
         if((items.id === "Home" || items.id === "About")) {
