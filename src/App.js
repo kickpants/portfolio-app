@@ -45,12 +45,9 @@ function App() {
 
   const backgroundStyles = {
     background: background,
-    backgroundSize: "cover",
     height: "100%",
     maxWidth: "100%",
     overflowX: "hidden",
-    backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed",
   };
 
   return (
