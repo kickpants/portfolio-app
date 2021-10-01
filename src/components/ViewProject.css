@@ -73,3 +73,37 @@ a:hover {
   padding: 15px 0px 20px 0px;
   font-size: 15pt;
 }
+
+@media only screen and (max-width: 800px) {
+  .thumb-class {
+    width: 360px;
+    height: 202.5px;
+  }
+  .title {
+    font-size: 20pt;
+  }
+  .description {
+    font-size: 13pt;
+  }
+  a {
+    font-size: 14pt;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .description {
+    font-size: 10pt;
+  }
+  .title {
+    font-size: 16pt;
+  }
+  a {
+    font-size: 12pt;
+  }
+}
+
+@media only screen and (max-height: 900px) {
+  .description {
+    font-size: 13pt;
+  }
+}

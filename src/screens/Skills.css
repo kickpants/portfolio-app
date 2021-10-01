@@ -6,12 +6,11 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 7vh;
   padding-right: 15vw;
   padding-left: 15vw;
-  background-image: url('../images/layered-waves-haikei.svg');
-  aspect-ratio: 1920/900;
 }
 
 .skill-card-container {

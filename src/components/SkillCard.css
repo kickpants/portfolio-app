@@ -1,6 +1,7 @@
 .skill-image {
   width: 80px;
   height: 80px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .card-box {
@@ -21,6 +22,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.skill-container:hover {
+  width: 130px;
+  height: 130px;
+}
+
+.skill-container:hover .skill-image {
+  width: 90px;
+  height: 90px;
 }
 
 .skill-text-container {

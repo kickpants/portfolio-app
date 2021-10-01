@@ -62,11 +62,13 @@ function App() {
     height: "100%",
     maxWidth: "100%",
     overflowX: "hidden",
+    position: "fixed",
+    width: "100%",
   };
 
   return (
     <div
-      className={shadow && "background-shadow"}
+      className={shadow ? "background-shadow background-position" : "background-position"}
       style={
         fade === true
           ? { ...backgroundStyles, ...myStyles.fadeOut }
