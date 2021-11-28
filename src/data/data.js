@@ -4,10 +4,20 @@ import lockerImage from "../images/thumbnails/locker_thumb.png";
 import blindsImage from "../images/thumbnails/blinds_thumb.png";
 import catImage from "../images/thumbnails/cat_thumbnail.png";
 import pybotImage from "../images/thumbnails/pybot_thumbnail.png";
+import monoteImage from "../images/thumbnails/monotethumbnail.png";
 
 const ProjectData = [
   new Project(
     "1",
+    "Monote",
+    "Monote.app is a website I created to quickly and efficiently create and share lists with friends. While I mainly developed it as a way to practice full-stack programming with Firebase, React, and Next.js, I also wanted to have a place I can create To-Do lists that I can share with my friends and family without having to deal with modern overcomplicated applications like Microsoft Teams or Trello.",
+    "Monote.app is a website I created to quickly and efficiently create and share lists with friends. The problem today with modern note/to-do list applications is that they become overcomplicated and bloated. This can lead to the user interface becoming obnoxiously overcrowded. In that case, you could always use a local application like notepad to jot down note virtually, but then you can only access them easily on the computer you made the file on. Monote solves these issues by being an open-source web application that stays simple to use, and easy to access. Using Google OAuth, users dont need to worry about password creation or going through account authentication emails. Simply sign in through Google, make a display name, and you're done. Want someone to see your notes? Send them your username and they can enter the monote.app/ url followed by your username. My main purpose for developing this application was to get more practice with full stack developing using Firebase, React and Next.js.",
+    monoteImage,
+    null,
+    "https://github.com/kickpants/comonote"
+  ),
+  new Project(
+    "2",
     "Automated Smart Locker System",
     "An automated locker system designed for the FAU library that is equipped with a Raspberry Pi, touch-screen kiosk interface, a QR-code scanner, \
     and solenoid locks. The lockers can be interacted with as an Administrator by using the accompanying web application which allows orders to be \
@@ -26,7 +36,7 @@ const ProjectData = [
     "https://github.com/kickpants/LibraryLocker-WebApp"
   ),
   new Project(
-    "2",
+    "3",
     "Automated Smart Shutter System",
     "A panel of plantation shutters is remotely/automatically adjusted \
     using an SG90 servo motor attached to a shutter axis. The angle of \
@@ -46,7 +56,7 @@ const ProjectData = [
     null
   ),
   new Project(
-    "3",
+    "4",
     "R-CNN Deep Learning Network for Object Detection",
     "By far my most important project, I developed a Region Based Convolutional Neural Network \
     to detect cats in images. Now, if you're unsure what you're looking at is a cat, simply consult \
@@ -61,7 +71,7 @@ const ProjectData = [
     RCNN_PDF
   ),
   new Project(
-    "4",
+    "5",
     "Python Based Discord Bot",
     "This is a small personal program written with Python and the Discord.py python API wrapper for Discord. It receives a command from \
     a user via a chat message and will act accordingly. Currently, its' main feature is the !play command, which receives \

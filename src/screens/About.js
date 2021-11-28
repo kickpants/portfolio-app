@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import { Container, Row, Col } from "react-bootstrap";
-import myResume from "../data/JacobHighbridge_Resume3.0.pdf";
+import myResume from "../data/JacobHighbridge_Resume4.0.pdf";
 import myTranscripts from "../data/Academic_Transcript.pdf";
 
 const About = () => {
