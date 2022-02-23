@@ -58,7 +58,7 @@ const ProjectData = [
   new Project(
     "4",
     "R-CNN Deep Learning Network for Object Detection",
-    "By far my most important project, I developed a Region Based Convolutional Neural Network \
+    "In this project, I tested and tweaked an Region Based Convolutional Neural Network \
     to detect cats in images. Now, if you're unsure what you're looking at is a cat, simply consult \
     this neural network to find out.",
     "This program, created using MATLAB, was a proof of concept for possible future Computer Vision \
